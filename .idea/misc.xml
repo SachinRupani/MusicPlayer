@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="../../.gradle/caches/transforms-3/4c155c37436e2a5a7f80eed032ab48f1/transformed/jetified-exoplayer-ui-2.10.5/res/layout/exo_playback_control_view.xml" value="0.19487179487179487" />
+        <entry key="../../.gradle/caches/transforms-3/b70b8de99201fa354e8560a0169e5a4b/transformed/jetified-exoplayer-ui-2.12.0/res/layout/exo_player_control_view.xml" value="0.19487179487179487" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/bg_circle.xml" value="0.20277777777777778" />
+        <entry key="app/src/main/res/drawable/ic_app_logo.xml" value="0.20277777777777778" />
+        <entry key="app/src/main/res/drawable/ic_app_logo_notification_white.xml" value="0.20277777777777778" />
+        <entry key="app/src/main/res/drawable/ic_exo_player_forward_10.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_exo_player_pause_button.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_exo_player_play_button.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_exo_player_rewind_10.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_exo_player_stop_button.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_music_library.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_rewind.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_small_notification.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ripple_default_circle.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ripple_default_flat.xml" value="0.2140625" />
+        <entry key="app/src/main/res/layout/activity_audio_listing.xml" value="0.15833333333333333" />
+        <entry key="app/src/main/res/layout/activity_audio_player.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.18611111111111112" />
+        <entry key="app/src/main/res/layout/content_audio_player_controls.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/row_audio_list.xml" value="0.17" />
+        <entry key="app/src/main/res/layout/row_item_audio.xml" value="0.21" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

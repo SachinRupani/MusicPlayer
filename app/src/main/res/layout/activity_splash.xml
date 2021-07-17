@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linLayoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFixSplashBackground"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/imgAppIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_app_logo"
+        app:backgroundTint="@color/colorMain"
+        app:elevation="9dp"
+        app:fabCustomSize="@dimen/dim_150"
+        app:maxImageSize="@dimen/dim_72"
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/txtSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_24"
+        android:fontFamily="@font/rubik_medium"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/font_size_26" />
+
+
+</LinearLayout>

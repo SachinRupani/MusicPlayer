@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JT Player</string>
+
+    <string name="title_audio_list">Song Library</string>
+
+    <string name="channel_id_audio_player">Audio Notification</string>
+    <string name="channel_name">Audio Notification</string>
+    <string name="channel_description">Audio Description</string>
+
+    <string name="please_provide_permissions">Please grant the storage permission to proceed</string>
+</resources>

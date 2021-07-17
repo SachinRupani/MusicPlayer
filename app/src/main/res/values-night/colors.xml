@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="colorPrimary">#121212</color>
+    <color name="colorPrimaryVariant">#121212</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorMain">#FF7043</color>
+    <color name="colorMainBuffer">#88FF7043</color>
+    <color name="colorOtherControls">#FF8A65</color>
+
+    <color name="colorGrey">#777777</color>
+    <color name="colorStatusBar">#121212</color>
+
+    <color name="colorTitleText">#FFFFFF</color>
+    <color name="colorSubTitleText">#999999</color>
+
+    <color name="colorRipple">#33FFCC80</color>
+
+    <color name="colorFixSplashBackground">#222222</color>
+</resources>

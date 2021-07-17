@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="model"
+            type="com.jodhpurtechies.audioplayer.data.entities.AudioFileModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.audioPlayer.AudioPlayerActivity">
+
+        <LinearLayout
+            android:id="@+id/linParentRoot"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/playerViewAudio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgAudioAlbum"
+                android:layout_width="@dimen/dim_280"
+                android:layout_height="@dimen/dim_280"
+                android:contentDescription="@{model.audioFileName ?? ``}"
+                android:scaleType="centerCrop"
+                app:audioImage="@{model}"
+                app:riv_border_color="@color/colorPrimary"
+                app:riv_border_width="0dp"
+                app:riv_corner_radius="@dimen/dim_24"
+                app:riv_mutate_background="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtAudioTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dim_24"
+                android:layout_marginTop="@dimen/dim_24"
+                android:layout_marginBottom="@dimen/dim_8"
+                android:gravity="center"
+                android:text="@{model.audioFileName ?? ``}"
+                android:textSize="@dimen/font_size_18"
+                tools:text="Audio Title" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtAudioArtist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dim_24"
+                android:gravity="center"
+                android:text="@{model.audioFileArtist ?? ``}"
+                android:textColor="@color/colorSubTitleText"
+                android:textSize="@dimen/font_size_14"
+                android:visibility="@{model.audioFileArtist == null ? View.GONE : View.VISIBLE}"
+                tools:text="Audio Artist" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtAudioAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dim_24"
+                android:layout_marginTop="@dimen/dim_4"
+                android:gravity="center"
+                android:text="@{model.audioFileAlbum ?? ``}"
+                android:textColor="@color/colorSubTitleText"
+                android:textSize="@dimen/font_size_12"
+                android:visibility="@{model.audioFileAlbum == null ? View.GONE : View.VISIBLE}"
+                tools:text="Audio Album" />
+
+
+        </LinearLayout>
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/playerViewAudio"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_150"
+            android:layout_marginHorizontal="@dimen/dim_24"
+            android:layout_marginTop="@dimen/dim_24"
+            android:layout_marginBottom="@dimen/dim_100"
+            app:scrubber_color="@color/colorMain"
+            app:ad_marker_color="@color/colorMain"
+            app:buffered_color="@color/colorMainBuffer"
+            app:controller_layout_id="@layout/content_audio_player_controls"
+            app:fastforward_increment="10000"
+            app:keep_content_on_player_reset="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:played_color="@color/colorMain"
+            app:resize_mode="fixed_width"
+            app:rewind_increment="10000"
+            app:show_timeout="0"
+            app:shutter_background_color="@color/colorPrimary"
+            app:unplayed_color="@color/colorRipple"
+            app:use_artwork="false" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
